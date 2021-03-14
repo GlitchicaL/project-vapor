@@ -1,0 +1,56 @@
+.current-forecast {
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 600px;
+
+    padding: 15px;
+
+    box-shadow: inset 2px 2px 5px var(--clr-midnight-blue);
+}
+
+.main-forecast {
+    padding: 10px;
+}
+.main-forecast-temp {
+    font-family: "Baloo Da 2";
+    font-weight: 600;
+    font-size: 72px;
+
+    margin: 15px;
+}
+
+.wind-forecast img {
+    padding: 0 10px;
+}
+
+.three-day-forecast {
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 100%;
+}
+.three-day-forecast-day {
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+
+    padding: 10px;
+    margin: 10px auto;
+
+    box-shadow: 0 2px 5px var(--clr-midnight-blue);
+}
+.three-day-forecast-day > * {
+    flex: 1 1 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .current-forecast {
+        flex-direction: row;
+        border-radius: 5px;
+    }
+    .three-day-forecast-day {
+        flex-direction: row;
+        border-radius: 5px;
+    }
+}

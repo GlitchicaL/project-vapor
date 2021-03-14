@@ -1,0 +1,39 @@
+header {
+    background: var(--clr-midnight-blue);
+
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-search {
+    display: none;
+}
+
+.header-mini-forecast {
+    margin: 0 20px;
+}
+.mini-forecast-icon {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 0 0 5px;
+}
+
+.nav-icon-btn {
+    cursor: pointer;
+}
+.fa-close {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-search {
+        display: block;
+    }
+}

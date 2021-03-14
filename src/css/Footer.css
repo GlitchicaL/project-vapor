@@ -1,0 +1,33 @@
+footer {
+    background: var(--clr-midnight-blue);
+    height: 40vh;
+
+    flex-direction: column;
+
+    text-align: center;
+}
+footer ul {
+    flex: 3;
+}
+footer li {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+
+    text-align: center;
+
+    box-shadow: inset 5px 5px 5px rgba(14, 145, 206, .4),
+    inset -5px -5px 5px rgba(14, 145, 206, .7);
+    border-radius: 10px;
+}
+footer li a {
+    width: 100%;
+    height: 100%;
+}
+
+footer h1 {
+    flex: 1;
+}
+footer p {
+    flex: 1;
+}

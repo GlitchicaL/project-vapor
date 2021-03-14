@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-sky-blue: #0e91ce;
+    --clr-midnight-blue: #002C5D;
+    --clr-fire-bush: #E79C25;
+    --clr-festival: #F9F871;
+    --clr-white: #F8F8F8;
+}
+
+body {
+    background: linear-gradient(to top, #002C5D, #0e91ce);
+    color: #F8F8F8;
+
+    overflow-x: hidden;
+    width: 100%;
+
+    font-family: "Roboto";
+}
+
+/*** LAYOUT STYLES ***/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*** COMPONENTS (Buttons, Glass Styles, Icons, etc.) ***/
+.glass {
+    background: linear-gradient(to bottom right, rgba(225, 225, 225, .3), rgba(225, 225, 225, .1)); /* Original Opacity .7, .3 */
+    color: rgba(0, 44, 93, .8);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 3px var(--clr-midnight-blue);
+
+    text-align: center;
+}
+
+.large-forecast-icon {
+    width: 160px;
+    max-width: 160px;
+    max-height: 160px;
+}
+.medium-forecast-icon {
+    width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.search-input {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+/*** TEXT STYLES (H1, P, A, ETC) ***/
+h1 {
+    font-size: clamp(1.4rem, 4vw, 1.6rem);
+}
+
+/* TODO: h2 format */
+
+h3 {
+    font-family: "Baloo Da 2";
+    font-weight: 600;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+}
+h4 {
+    font-family: "Baloo Da 2";
+    font-weight: 500;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+}
+h5 {
+    font-family: "Baloo Da 2";
+    font-weight: 400;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+}
+p {
+    font-family: "Roboto";
+    font-size: clamp(1.15rem, 4vw, 1.25rem);
+}
+a {
+    color: var(--clr-white);
+
+    transition: 150ms all linear;
+}
+a:hover {
+    color: var(--clr-sky-blue);
+}
+i {
+    font-size: 26px !important;
+}
+ul {
+    list-style: none;
+}
+
+/*** CLOUD STYLES AND ANIMATIONS ***/
+.clouds {
+    overflow: hidden;
+}
+.clouds img {
+    position: absolute;
+    z-index: -1;
+    bottom: -100px;
+    left: -120px;
+
+    animation: clouds-anim calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes clouds-anim {
+  0% {
+      opacity: 0;
+      transform: scale(1);
+  }
+  25% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: scale(1.3);
+  }
+}

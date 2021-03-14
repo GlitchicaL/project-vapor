@@ -1,0 +1,40 @@
+main {
+    position: relative;
+    min-height: 100vh;
+}
+main section {
+    max-width: 650px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+.current-location-banner {
+    min-width: 350px;
+    margin: 0 auto;
+
+    z-index: 2;
+}
+
+/*** MEDIA QUERY ***/
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    main section {
+        width: 100%;
+        margin: 10% 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .current-location-banner {
+        padding: 5px 30px;
+        border-radius: 5px;
+
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
