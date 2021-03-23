@@ -1,4 +1,4 @@
-const CurrentForecast = () => {
+const CurrentForecast = ({ currentForecast }) => {
     return (
         <section className="glass flex-center">
             <h3>Current Forecast</h3>
@@ -8,15 +8,15 @@ const CurrentForecast = () => {
                 <div className="main-forecast">
 
                     <div className="flex">
-                        <img src="./images/weather-icons/cloud-rain.png" alt="" />
-                        <p className="main-forecast-temp">73°</p>
+                        <img src={"./images/weather-icons/" + currentForecast.customIcon} alt="" />
+                        <p className="main-forecast-temp">{currentForecast.temperature}° F</p>
                     </div>
 
-                    <h5>Showers And Thunderstorms</h5>
+                    <h5>{currentForecast.shortForecast}</h5>
 
                     <div className="flex wind-forecast">
                         <img src="./images/weather-icons/wind.png" alt="" />
-                        <p>E 8 mph</p>
+                        <p>{currentForecast.windDirection + " " + currentForecast.windSpeed}</p>
                     </div>
 
                 </div>

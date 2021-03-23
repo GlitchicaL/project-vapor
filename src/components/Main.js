@@ -2,16 +2,16 @@
 import CurrentForecast from "./main/CurrentForecast";
 import ThreeDayForecast from "./main/ThreeDayForecast";
 
-const Main = () => {
+const Main = (props) => {
     return (
         <main>
             <div className="current-location-banner glass flex">
-                <h4>MIAMI, FL</h4>
+                <h4>{props.location}</h4>
             </div>
 
             {/* MAIN COMPONENTS */}
-            <CurrentForecast />
-            <ThreeDayForecast />
+            {props.currentForecast && <CurrentForecast currentForecast={props.currentForecast} />}
+            {props.threeDayForecast && <ThreeDayForecast threeDayForecast={props.threeDayForecast} />}
 
             {/* CLOUD IMAGES (BACKGROUND) */}
             <div className="clouds">
