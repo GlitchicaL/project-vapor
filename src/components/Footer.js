@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer className="flex">
-            <ul className="flex">
+            <ul className="flex social-list">
                 <li><a href="/" className="flex"><img src="./images/social-icons/twitter.png" alt="" /></a></li>
                 <li><a href="/" className="flex"><img src="./images/social-icons/facebook.png" alt="" /></a></li>
                 <li><a href="/" className="flex"><img src="./images/social-icons/instagram.png" alt="" /></a></li>

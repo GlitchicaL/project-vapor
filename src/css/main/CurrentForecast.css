@@ -6,16 +6,21 @@
 
     padding: 15px;
 
-    box-shadow: inset 2px 2px 5px var(--clr-midnight-blue);
+    box-shadow: 0 2px 5px var(--clr-midnight-blue);
+    transition: box-shadow 1s linear;
 }
 
 .main-forecast {
     padding: 10px;
 }
+.main-forecast-img {
+    width: 128px;
+    height: 128px;
+}
 .main-forecast-temp {
     font-family: "Baloo Da 2";
     font-weight: 600;
-    font-size: 72px;
+    font-size: clamp(3rem, 4vw, 3.5rem);
 
     margin: 15px;
 }
@@ -43,9 +48,18 @@
 .three-day-forecast-day > * {
     flex: 1 1 100%;
 }
+.three-day-forecast-date {
+    text-align: left;
+    padding-left: 15px;
+}
+.three-day-forecast-day img {
+    margin: 0 15px;
+}
 
 @media only screen and (min-width: 768px) {
     .current-forecast {
+        box-shadow: inset 2px 2px 5px var(--clr-midnight-blue);
+
         flex-direction: row;
         border-radius: 5px;
     }

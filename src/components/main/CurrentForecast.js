@@ -8,7 +8,7 @@ const CurrentForecast = ({ currentForecast }) => {
                 <div className="main-forecast">
 
                     <div className="flex">
-                        <img src={"./images/weather-icons/" + currentForecast.customIcon} alt="" />
+                        <img src={"./images/weather-icons/" + currentForecast.customIcon} alt="" className="main-forecast-img" />
                         <p className="main-forecast-temp">{currentForecast.temperature}° F</p>
                     </div>
 

@@ -8,19 +8,24 @@
 
     transition: 500ms ease-in-out;
 }
+.sidebar-nav div {
+    width: 100%;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: -200px auto;
+}
 .sidebar-nav-search {
     display: block;
-    margin: 15px auto;
+
+    margin: 0 auto;
 }
 .sidebar-nav-list {
     width: 75%;
-
-    margin: -200px auto;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 .sidebar-nav-list-item {
     min-width: 200px;
@@ -58,5 +63,8 @@
 @media only screen and (min-width: 1200px) {
     .sidebar-nav {
         width: 30%;
+    }
+    .sidebar-nav div {
+        top: 50%;
     }
 }
