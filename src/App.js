@@ -21,9 +21,18 @@ function App() {
     })
 
     async function getLocation(geoLocationData) {
-      let userData = await NWS.getUserData(geoLocationData); // Get user location coordinates, and nws-api paths
-      let forecastData = await NWS.getCurrentForecast(userData.hourlyForecastURL);
-      let threeDayData = await NWS.getMultiDayForecast(userData.dayForecastURL);
+      let userData = null;
+      let forecastData = null;
+      let threeDayData = null;
+
+      try {
+        userData = await NWS.getUserData(geoLocationData); // Get user location coordinates, and nws-api paths
+        forecastData = await NWS.getCurrentForecast(userData.hourlyForecastURL);
+        threeDayData = await NWS.getMultiDayForecast(userData.dayForecastURL);
+      }
+      catch (error) {
+        console.log(error);
+      }
 
       setLocation(userData.location);
       setCurrentForecast(forecastData);

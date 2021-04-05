@@ -1,11 +1,10 @@
 main {
     position: relative;
-    min-height: 100vh;
 }
 main section {
     max-width: 650px;
-    min-height: 500px;
     margin: 0 auto;
+    padding: 15px;
 }
 .current-location-banner {
     min-width: 350px;
@@ -29,9 +28,12 @@ main section {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+
+        height: 100vh;
     }
     main section {
         width: 100%;
+        min-height: 500px;
         margin: 10% 10px;
         padding: 15px;
         border-radius: 10px;
