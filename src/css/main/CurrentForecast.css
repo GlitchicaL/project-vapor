@@ -6,7 +6,9 @@
 
     padding: 15px;
 
-    box-shadow: 0 2px 5px var(--clr-midnight-blue);
+    /* box-shadow: 0 2px 5px var(--clr-midnight-blue); */
+    box-shadow: inset 2px 2px 5px var(--clr-midnight-blue);
+    border-radius: 5px;
     transition: box-shadow 1s linear;
 }
 
@@ -44,6 +46,7 @@
     margin: 10px auto;
 
     box-shadow: 0 2px 5px var(--clr-midnight-blue);
+    border-radius: 5px;
 }
 .three-day-forecast-day > * {
     flex: 1 1 100%;
@@ -58,13 +61,9 @@
 
 @media only screen and (min-width: 768px) {
     .current-forecast {
-        box-shadow: inset 2px 2px 5px var(--clr-midnight-blue);
-
         flex-direction: row;
-        border-radius: 5px;
     }
     .three-day-forecast-day {
         flex-direction: row;
-        border-radius: 5px;
     }
 }

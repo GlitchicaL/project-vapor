@@ -2,7 +2,7 @@ import DayForecast from "./DayForecast";
 
 const ThreeDayForecast = ({ threeDayForecast }) => {
     return (
-        <section className="glass flex-center">
+        <section className="flex-center">
             <h3>3 Day Forecast</h3>
             <div className="three-day-forecast flex">
                 {/* TODO: LOOP THROUGH THIS! */}

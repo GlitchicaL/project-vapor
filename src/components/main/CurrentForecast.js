@@ -1,6 +1,6 @@
 const CurrentForecast = ({ currentForecast }) => {
     return (
-        <section className="glass flex-center">
+        <section className="flex-center">
             <h3>Current Forecast</h3>
 
             <div className="current-forecast glass flex">

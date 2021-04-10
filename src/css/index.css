@@ -17,6 +17,7 @@
 html {
     position: relative;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 
 /*** COMPONENTS (Buttons, Glass Styles, Icons, etc.) ***/
 .glass {
-    background: rgba(225, 225, 225, .1);
+    background: rgba(225, 225, 225, .5);
     color: rgba(0, 44, 93, .8);
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 3px var(--clr-midnight-blue);
@@ -115,7 +116,7 @@ ul {
 
 @media only screen and (min-width: 768px) {
     .glass { /* Improve Glass effect on bigger screens */
-        background: linear-gradient(to bottom right, rgba(225, 225, 225, .3), rgba(225, 225, 225, .1)); /* Original Opacity .7, .3 */
+        background: linear-gradient(to bottom right, rgba(225, 225, 225, .5), rgba(225, 225, 225, .4)); /* Original Opacity .7, .3 */
     }
 }
 

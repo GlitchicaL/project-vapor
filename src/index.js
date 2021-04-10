@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom';
 /*** IMPORT CSS ***/
 import './css/index.css';
 import './css/Header.css';
-import './css/NavSidebar.css';
 import './css/main/Main.css';
 import './css/Footer.css';
 
