@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
 /**************************************************************************/
 
@@ -15,14 +16,15 @@ import './css/main/CurrentForecast.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './store';
 
 /**************************************************************************/
 
 /*** RENDER ***/
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
